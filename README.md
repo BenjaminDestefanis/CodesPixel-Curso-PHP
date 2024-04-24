@@ -20,3 +20,31 @@
 
 >[!NOTE]
 
+## ***Configuracion de Entorno de trabajo***
+
+> Instalacion de PHP
+> Instalacion de servidor (Apache - etc)
+> Instalacion de Gestor de base de datos (mySQL, PstgreSQL, etc)
+
+## ***Primer fichero PHP***
+
+``` html
+    <html>
+        <head>
+            <title>Primer Documento PHP</title>
+        </head>
+
+        <body>
+            <?php echo "<p>Hello Word!</p>"; ?>
+
+        </body>
+    </html>
+
+```
+### ***Accediendo a los ficheros***
+
+> Una vez levantado nuestro servidor (XAMP, AMPS, APACHE, etc) ya podemos acceder al archivo en la ruta indicada
+> http://127.0.0.1/index.php
+>
+
+
