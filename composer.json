@@ -1,0 +1,18 @@
+{
+    "name": "jc/codes-pixel-curso-php",
+    "description": "Curso PHP v.8.2",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Jc\\CodesPixelCursoPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "BenjaminDestefanis",
+            "email": "benjaminisraelb@gmail.com"
+        }
+    ],
+    "require": {}
+}
