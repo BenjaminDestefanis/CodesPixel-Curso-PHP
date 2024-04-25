@@ -94,3 +94,37 @@ Las variables superglobales, son variables predefinidas en PHP que estan disponi
 ```
 Output: Esta usando Internet Explorer.
 ```
+
+>[!NOTE]
+**strpos()** es una funcion integrada en PHP que busca un string dentro de otro. En este caso estamos buscando "MSIE" dentro de $_SERVER['HTTP_USER_AGENT']
+
+
+
+### ***Utilizando formularios en PHP***
+
+#### ***Ejemplo de un formulario en HTML***
+
+```html
+<form action='accion.php' mehotd='post'>
+    <p>Su nombre: <input type="text" name="nombre"/></p>
+    <p>Su edad: <input type="text" name="edad"/></p>
+    <p><input type="submit"/></p>
+</form>
+
+```
+
+cuando el usurio de click a submit - se llama a la pagina 'accion.php'
+
+#### ***Ejemplo de fichero php***
+
+```php
+    Hola <?php echo htmlspecialchars($POST['nombre']);
+    Usted tiene <?php echo (int)$_POST['edad']?>
+    ?>
+
+```
+
+Este archivo mostrara este mensaje en el navegador. 
+
+>[!NOTE]
+htmlspecialchars() -> garantiza que cualquier cartacter especial en html se codifique adecuadamente, de manera que nadie pueda inyectar etiquetas HTML o Javascripten la pagina.  las variables $_POST['nombre'] y $_POST['edad'] son establecidad por php
