@@ -80,3 +80,17 @@ Las variables superglobales, son variables predefinidas en PHP que estan disponi
 * $argc - El numero de argumentos pasados a un script
 * $argv - Array de argumentos pasados a un script.
 
+
+### ***Ejemplo #2 - Usando estructuras de control***
+
+```php
+    <?php
+    if( strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE') !== FALSE){
+        echo 'Esta usando Internet Explorer.';
+    }
+    ?>
+```
+
+```
+Output: Esta usando Internet Explorer.
+```
